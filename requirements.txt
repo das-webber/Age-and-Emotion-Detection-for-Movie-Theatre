@@ -1,0 +1,7 @@
+Python 3.7+
+
+OpenCV
+
+TensorFlow / Keras
+
+Numpy, Pandas, Pillow
