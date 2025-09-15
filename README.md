@@ -17,4 +17,51 @@ All results are logged into `theatre_log.csv`.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
+
+age-emotion-theatre/
+│
+├── models/
+│   ├── age_model.h5
+│   ├── emotion_model.h5
+│
+├── theatre_detection.py       # main Tkinter app
+├── requirements.txt           # dependencies
+├── theatre_log.csv            # will be created automatically
+├── README.md                  # documentation
+
+
+---
+
+## ⚙️ Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/das-webber/Age-and-Emotion-Detection-for-Movie-Theatre.git
+   cd Age-and-Emotion-Detection-for-Movie-Theatre
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3.Place pre-trained models inside the models/ folder:
+
+    ->models/emotion_model.h5
+
+ Usage
+
+Run the notebook:
+
+    Age_And_Emotion_Detection_for_movie_Theatre
+    
+    Click Start Detection → Live camera feed starts.
+    Click Stop Detection → Detection stops, data saved to CSV.
+
+ Output:
+
+Under 13 / Over 60 → Red box + "Not allowed"
+
+Age 13–60 → Green box + Emotion label
+
+Log saved as theatre_log.csv with:
+      
+      Age, Emotion, EntryTime
+
